@@ -1,0 +1,28 @@
+{
+    "fixedRateContract": {
+        "contractName": "My First Contract",
+        "jobTitle": "Account Executive",
+        "seniorityLevel": "3",
+        "scopeOfWork": "Automation Exam",
+        "howMuch": "1000",
+        "currency": {
+            "GBP - British Pound": "8"
+        },
+        "Per": {
+            "Week": "0",
+            "Every other week": "1",
+            "Twice a month": "2",
+            "Month": "3"
+        },
+        "specialClause": "Prefered to work remote",
+        "contractorTaxResidence": {
+            "country": {
+                "United States": "1-2"
+            },
+            "state": {
+                "Colorado": "5"
+            }
+    }
+        
+    }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "deelautomation",
+  "version": "1.0.0",
+  "description": "Deel Automation exam",
+  "main": "index.js",
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "cypress:chrome": "cypress run --browser chrome",
+    "cypress:firefox": "cypress run --browser firefox",
+    "cy:headless": "cypress run --headless --browser chrome",
+    "cypress:reporter": "cypress run --browser chrome --reporter mochawesome",
+    "cypress:headlessReport": "cypress run --headless --browser chrome --reporter mochawesome"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/acorzog"
+  },
+  "author": "Andrea Corzo Gene",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^6.9.1",
+    "prettier": "^2.3.2"
+  },
+  "devDependencies": {
+    "cypress-mochawesome-reporter": "^2.2.0",
+    "mochawesome": "^6.2.1",
+    "mochawesome-merge": "^4.2.0",
+    "mochawesome-report-generator": "^5.2.0"
+  }
+}

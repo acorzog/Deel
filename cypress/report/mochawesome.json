@@ -1,0 +1,142 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-07-27T03:53:15.498Z",
+    "end": "2021-07-27T03:53:43.153Z",
+    "duration": 27655,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "f2b62baf-0ad3-4cb9-a5f1-1a092728228f",
+      "title": "",
+      "fullFile": "cypress/integration/fixedRate.spec.js",
+      "file": "cypress/integration/fixedRate.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "8341fce9-8664-4ab6-a399-420e6bb544fb",
+          "title": "Create a Fixed Rate Contract",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should log into the Deel Dashboard",
+              "fullTitle": "Create a Fixed Rate Contract Should log into the Deel Dashboard",
+              "timedOut": null,
+              "duration": 9969,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_login[\"default\"].login(_config.login_username, _config.login_password);\n_login[\"default\"].whatsNewContent();",
+              "err": {},
+              "uuid": "e8eb9814-7384-45ac-9df1-de0b13823cde",
+              "parentUUID": "8341fce9-8664-4ab6-a399-420e6bb544fb",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should Create New Contract on Dasboard",
+              "fullTitle": "Create a Fixed Rate Contract Should Create New Contract on Dasboard",
+              "timedOut": null,
+              "duration": 1133,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_dashboard.Dashboard.sideBar();\n_dashboard.Dashboard.pageContent();\n_dashboard.CreateContract.createNewContract();",
+              "err": {},
+              "uuid": "07c5e19f-bf12-4358-ab44-b186af664d47",
+              "parentUUID": "8341fce9-8664-4ab6-a399-420e6bb544fb",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should Open and Create a Fixed rate Contract",
+              "fullTitle": "Create a Fixed Rate Contract Should Open and Create a Fixed rate Contract",
+              "timedOut": null,
+              "duration": 14943,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_fixedRated.FixedRated.fixedRatedOption();\n_fixedRated.FixedRated.generalInfo(contractName, jobTitle, senioty, scope);\n_fixedRated.FixedRated.paymentDetails(rate, currency, per);\n_fixedRated.FixedRated.defineDates();\n_fixedRated.FixedRated.extras(specialClause);\n_fixedRated.FixedRated.compliance(country, state);\n_fixedRated.FixedRated.summary(contractName);",
+              "err": {},
+              "uuid": "d142aad2-2845-4d92-99c7-c6d70aefe232",
+              "parentUUID": "8341fce9-8664-4ab6-a399-420e6bb544fb",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "e8eb9814-7384-45ac-9df1-de0b13823cde",
+            "07c5e19f-bf12-4358-ab44-b186af664d47",
+            "d142aad2-2845-4d92-99c7-c6d70aefe232"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 26045,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/report",
+        "charts": true,
+        "reportPageTitle": "custom-title"
+      },
+      "version": "5.2.0"
+    }
+  }
+}

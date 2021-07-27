@@ -1,0 +1,14 @@
+{
+    "viewportWidth": 1440,
+    "viewportHeight": 1000,
+    "video": false,
+    "defaultCommandTimeout": 5000,
+    "pageLoadTimeout": 100000,
+    "waitForAnimations": true,
+    "reporter": "cypress-mochawesome-reporter",
+    "reporterOptions": {
+        "charts": true,
+        "overwrite": true
+    }
+     
+}
