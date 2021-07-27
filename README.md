@@ -1,7 +1,7 @@
 # Automation solution using CYPRESS 
 
-Node version 14
-npm install
+* Node version 14
+* npm install
 
 
 ## How to run
